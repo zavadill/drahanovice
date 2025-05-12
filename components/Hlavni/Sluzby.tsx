@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sluzby = () => {
   return (
-    <div>
+    <div className='bg-[var(--light-brown)]'>
       <div className='max-w-11/12 mx-auto py-15'>
         <h3 className='text-4xl'>Naše služby</h3>
         <div>
