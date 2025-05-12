@@ -19,10 +19,10 @@ const Navbar = () => {
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
   return (
-    <div className={`${scrolled ? 'h-17 bg-transparent  ' : 'h-20 bg-amber-300'} fixed w-full  transition-all duration-300 `}>
+    <div className={`${scrolled ? 'h-17 bg-white  ' : 'h-20 bg-transparent'} fixed w-full  transition-all duration-300 `}>
         <div className="max-w-11/12 mx-auto flex justify-between items-center h-full">
             <Link href="/">Hostinec na Nové</Link>
-            <div className='flex flex-row space-x-7'>
+            <div className='flex flex-row space-x-7 items-center'>
                 <Link href="/">Domů</Link>
                 <Link href="/onas">O nás</Link>
                 <Link href="/menu">Menu</Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <Link href="/akce">Svatby a akce</Link>
                 <Link href="/galerie">Galerie</Link>
                 <Link href="/kontakt">Kontakt</Link>
-                <Link href="/rezervace">Rezervovat</Link>
+                <Link href="/rezervace" className='rounded bg-[var(--green-btn)] py-3 px-5'>Rezervovat</Link>
             </div>
         </div>
     </div>
