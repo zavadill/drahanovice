@@ -19,7 +19,7 @@ const Navbar = () => {
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
   return (
-    <div className={`${scrolled ? 'h-17' : 'h-20'} fixed w-full bg-amber-300 transition-all duration-300 `}>
+    <div className={`${scrolled ? 'h-17 bg-transparent  ' : 'h-20 bg-amber-300'} fixed w-full  transition-all duration-300 `}>
         <div className="max-w-11/12 mx-auto flex justify-between items-center h-full">
             <Link href="/">Hostinec na Nové</Link>
             <div className='flex flex-row space-x-7'>
